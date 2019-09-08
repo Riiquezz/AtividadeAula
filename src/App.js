@@ -6,6 +6,7 @@ import { Componente2 } from './Componente2';
 import { Componente3 } from './Componente3';
 import { Componente4 } from './Componente4';
 import { Componente5 } from './Componente5';
+import { Sobre } from './Sobre';
 import { NoMatch } from './NoMatch';
 //import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route path="/componente3" component={Componente3}/>
           <Route path="/componente4" component={Componente4}/>
           <Route path="/componente5" component={Componente5}/>
+          <Route path="/sobre" component={Sobre}/>
           <Route component={NoMatch}/>
         </Switch>
       </Router>

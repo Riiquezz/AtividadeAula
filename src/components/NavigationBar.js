@@ -39,6 +39,7 @@ export const NavigationBar = () => (
                 <Nav.Item><Nav.Link href="/componente3">Componente 3</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="/componente4">Componente 4</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="/componente5">Componente 5</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/sobre">Sobre</Nav.Link></Nav.Item>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
