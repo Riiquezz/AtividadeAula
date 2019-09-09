@@ -34,21 +34,21 @@ const Styles = styled.div`{
 `;
 
 export const Home = () => (
-    
+
     <Styles>
 
         <div className="#">
 
 
-        
+
             <Container>
 
 
-                
-                <h2 class="h1-responsive font-weight-bold my-5">Bem vindo ao tutorial de React-Bootstrap!</h2>
 
-                <p class="grey-text w-responsive mx-auto mb-5">Este tutorial é indicado para pessoas que nunca tiveram contato com React.</p>
-                <p>Segue abaixo os passos para iniciar seu primeiro projeto!</p>
+                <center><h2 class="h1-responsive font-weight-bold my-5">Bem vindo ao tutorial de React-Bootstrap!</h2></center>
+
+                <center><p class="grey-text w-responsive mx-auto mb-5">Este tutorial é indicado para pessoas que nunca tiveram contato com React.</p></center>
+                <center><p>Segue abaixo os passos para iniciar seu primeiro projeto!</p></center>
 
 
                 <div class="row d-flex justify-content-center">
@@ -172,7 +172,7 @@ export const Home = () => (
         </div>
 
     </Styles>
-    
+
 
 
 
