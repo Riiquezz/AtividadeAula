@@ -5,7 +5,7 @@ import backgroundImage from '../assets/background.jpg';
 
 const Styles = styled.div`
     .jumbo {
-        
+        background: url(${backgroundImage}) no-repeat fixed bottom;
         background-color: black;
         
         color: #ccc;

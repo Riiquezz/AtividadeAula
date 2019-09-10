@@ -12,6 +12,9 @@ import { NoMatch } from './NoMatch';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
 import { Footer } from './components/Footer';
+import { Link } from 'react-router-dom';
+import { Nav, Navbar, NavItem } from "react-bootstrap";
+
 
 
 class App extends React.Component {

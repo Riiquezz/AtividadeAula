@@ -1,13 +1,13 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import backgroundImage from './assets/background.jpg';
 import image1 from './assets/image1.png';
 import image2 from './assets/image2.png';
 import image3 from './assets/image3.png';
 import image4 from './assets/image4.png';
 import Image from 'react-image-resizer';
-
+import backgroundImage from './assets/background.jpg';
+import { ImageBackground } from 'react';
 
 const Styles = styled.div`{
     .homepage {
@@ -24,6 +24,17 @@ const Styles = styled.div`{
         flex: 1,
         width: 50,
         height: 50,
+
+    .back: {
+        
+        background-image: url('./assets/background.jpg');
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:100%;
+        width:100%;
+
+    }
         
         
         
@@ -34,14 +45,17 @@ const Styles = styled.div`{
 `;
 
 export const Home = () => (
+    
 
-    <Styles>
+    <Styles className="back">
 
         <div className="#">
+        
 
 
 
             <Container>
+                
 
 
 
@@ -168,6 +182,7 @@ export const Home = () => (
 
 
                 </div>
+
             </Container>
         </div>
 
