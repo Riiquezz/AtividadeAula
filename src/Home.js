@@ -46,10 +46,10 @@ const Styles = styled.div`{
 
 export const Home = () => (
     
+    
+    <Styles className="#">
 
-    <Styles className="back">
-
-        <div className="#">
+        <div className="back">
         
 
 

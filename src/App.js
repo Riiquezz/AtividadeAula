@@ -25,7 +25,7 @@ class App extends React.Component {
       <Jumbotron />
       <Router>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route path="/" exact={true} component={Home}/>
           <Route path="/componente1" component={Componente1}/>
           <Route path="/componente2" component={Componente2}/>
           <Route path="/componente3" component={Componente3}/>

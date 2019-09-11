@@ -36,6 +36,7 @@ export const NavigationBar = () => (
         <Navbar.Collapse id="baisc-navbar-nav">
             <Nav className="ml-auto">
                 <Router>
+                    <Nav.Link><Link to="/" className="ml-auto">Home</Link></Nav.Link>
                     <Nav.Item><Nav.Link href="/"><h4>Home</h4></Nav.Link></Nav.Item>
                     
                     <Nav.Item><Nav.Link href="/componente1"><h4>Componente 1</h4></Nav.Link></Nav.Item>
