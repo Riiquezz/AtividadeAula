@@ -3,8 +3,8 @@ import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 import logo from '../assets/logo.png';
 import Image from 'react-image-resizer';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const Styles = styled.div`
     .navbar {
@@ -17,37 +17,42 @@ const Styles = styled.div`
     &:hover{
         color: white;
     }
+    .teste {
+        color: white;
+    }
+    .corBotao {
+        color: black;
+    }
+
     }
 `;
 
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg">
-        <Navbar.Brand href="#home">
-            <Image
-                                src={logo}
-                                width={50}
-                                height={50}
-                                Styles={Styles.image}
-                            />
-            {"The site!"}
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Collapse id="baisc-navbar-nav">
-            <Nav className="ml-auto">
-                <Router>
-                    <Nav.Link><Link to="/" className="ml-auto">Home</Link></Nav.Link>
-                    <Nav.Item><Nav.Link href="/"><h4>Home</h4></Nav.Link></Nav.Item>
+            <Navbar.Brand href="#home">
+                <Image
+                    src={logo}
+                    width={50}
+                    height={50}
+                    Styles={Styles.image}
+                />
+                {"The site!"}
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="baisc-navbar-nav">
+                <Nav className="ml-auto">
+
+                    <Button variant="outline-light"><Nav.Link><Link to="/" className="teste"><h5>Home</h5></Link></Nav.Link></Button>
+                    <Button variant="outline-light"><Nav.Link><Link to="/componente1" className="teste"><h5>Componente 1</h5></Link></Nav.Link></Button>
+                    <Button variant="outline-light"><Nav.Link><Link to="/componente2" className="teste"><h5>Componente 2</h5></Link></Nav.Link></Button>
+                    <Button variant="outline-light"><Nav.Link><Link to="/componente3" className="teste"><h5>Componente 3</h5></Link></Nav.Link></Button>
+                    <Button variant="outline-light"><Nav.Link><Link to="/componente4" className="teste"><h5>Componente 4</h5></Link></Nav.Link></Button>
+                    <Button variant="outline-light"><Nav.Link><Link to="/componente5" className="teste"><h5>Componente 5</h5></Link></Nav.Link></Button>
+                    <Button variant="outline-light"><Nav.Link><Link to="/sobre" className="teste"><h5>Sobre</h5></Link></Nav.Link></Button>
                     
-                    <Nav.Item><Nav.Link href="/componente1"><h4>Componente 1</h4></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/componente2"><h4>Componente 2</h4></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/componente3"><h4>Componente 3</h4></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/componente4"><h4>Componente 4</h4></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/componente5"><h4>Componente 5</h4></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/sobre"><h4>Sobre</h4></Nav.Link></Nav.Item>
-                </Router>
-            </Nav>
-        </Navbar.Collapse>
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
     </Styles>
 )

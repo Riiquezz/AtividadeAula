@@ -35,7 +35,8 @@ const Styles = styled.div`{
         width:100%;
 
     }
-        
+    
+     
         
         
         
@@ -45,17 +46,22 @@ const Styles = styled.div`{
 `;
 
 export const Home = () => (
-    
-    
-    <Styles className="#">
 
-        <div className="back">
+
+
+    <Styles className="back">
+        <div>
+        
+            
         
 
+            <div className="back">
 
 
-            <Container>
-                
+
+
+                <Container>
+
 
 
 
@@ -148,7 +154,7 @@ export const Home = () => (
                             </a>
                             <h4 class="font-weight-bold mb-3">Iniciando o ambiente</h4>
                             <p>Pode então ser rodado o comando "npm start" para iniciar o ambiente e conseguimos trabalhar.
-        </p>
+            </p>
 
                         </div>
                     </div>
@@ -185,8 +191,11 @@ export const Home = () => (
 
             </Container>
         </div>
+        
+    </div >
 
-    </Styles>
+
+    </Styles >
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { Componente1 } from './Componente1';
 import { Componente2 } from './Componente2';
@@ -17,26 +17,25 @@ import { Nav, Navbar, NavItem } from "react-bootstrap";
 
 
 
+
 class App extends React.Component {
   render() {
     return (
-    <React.Fragment>
-      <NavigationBar />
-      <Jumbotron />
-      <Router>
+      <BrowserRouter>
+        <NavigationBar />
+        <Jumbotron />
         <Switch>
-          <Route path="/" exact={true} component={Home}/>
-          <Route path="/componente1" component={Componente1}/>
-          <Route path="/componente2" component={Componente2}/>
-          <Route path="/componente3" component={Componente3}/>
-          <Route path="/componente4" component={Componente4}/>
-          <Route path="/componente5" component={Componente5}/>
-          <Route path="/sobre" component={Sobre}/>
-          <Route component={NoMatch}/>
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/componente1" component={Componente1} />
+          <Route path="/componente2" component={Componente2} />
+          <Route path="/componente3" component={Componente3} />
+          <Route path="/componente4" component={Componente4} />
+          <Route path="/componente5" component={Componente5} />
+          <Route path="/sobre" component={Sobre} />
+          <Route component={NoMatch} />
         </Switch>
-      </Router>
-      <Footer></Footer>
-    </React.Fragment>
+        <Footer></Footer>
+      </BrowserRouter>
     );
   }
 }
